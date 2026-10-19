@@ -1,34 +1,34 @@
 window.KQS_BRANDS = [
   {
     "name": "Essentials",
-    "count": 6,
+    "count": 7,
     "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872173645.webp",
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873649230.webp",
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873673070.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865291308.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862557677.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865291308.webp"
     ],
     "href": "products.html?q=Essentials"
   },
   {
     "name": "Nike",
-    "count": 56,
+    "count": 81,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7870199645.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873166944.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873174080.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7870109387.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7874893342.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7871874943.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7874926480.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7874967848.webp"
     ],
     "href": "products.html?q=Nike"
   },
   {
     "name": "adidas",
-    "count": 11,
+    "count": 14,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862573719.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865367012.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866612812.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865052045.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7871922341.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7871892831.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7874934446.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862573719.webp"
     ],
     "href": "products.html?q=adidas"
   },
@@ -45,34 +45,47 @@ window.KQS_BRANDS = [
   },
   {
     "name": "Ami",
-    "count": 4,
+    "count": 5,
     "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7871910451.webp",
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873670936.webp",
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7870529327.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862397927.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865716991.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862397927.webp"
     ],
     "href": "products.html?q=Ami"
   },
   {
     "name": "Amiri",
-    "count": 2,
+    "count": 5,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862537699.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866894590.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7871791271.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7871971725.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873870515.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862537699.webp"
     ],
     "href": "products.html?q=Amiri"
   },
   {
     "name": "Apple",
-    "count": 15,
+    "count": 17,
     "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873695867.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7876678904.webp",
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862351701.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865027444.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865338070.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862254139.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865027444.webp"
     ],
     "href": "products.html?q=Apple"
+  },
+  {
+    "name": "Arc'teryx",
+    "count": 14,
+    "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7874170867.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7877256756.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7874149077.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7877264672.webp"
+    ],
+    "href": "products.html?q=Arc%27teryx"
   },
   {
     "name": "ASICS",
@@ -86,13 +99,24 @@ window.KQS_BRANDS = [
     "href": "products.html?q=ASICS"
   },
   {
-    "name": "Balenciaga",
-    "count": 28,
+    "name": "Audemars Piguet",
+    "count": 7,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7870137037.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873621214.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7870612237.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865507272.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7874199121.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7877195412.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7877041346.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7874177353.webp"
+    ],
+    "href": "products.html?q=Audemars%20Piguet"
+  },
+  {
+    "name": "Balenciaga",
+    "count": 45,
+    "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7871910443.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872742241.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872740369.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875744692.webp"
     ],
     "href": "products.html?q=Balenciaga"
   },
@@ -109,14 +133,23 @@ window.KQS_BRANDS = [
   },
   {
     "name": "Burberry",
-    "count": 7,
+    "count": 10,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7870694005.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865487576.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866805542.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865006803.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7871944031.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875027624.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7876924180.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7870694005.webp"
     ],
     "href": "products.html?q=Burberry"
+  },
+  {
+    "name": "Calvin Klein",
+    "count": 2,
+    "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873682529.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873902063.webp"
+    ],
+    "href": "products.html?q=Calvin%20Klein"
   },
   {
     "name": "Canada Goose",
@@ -129,34 +162,43 @@ window.KQS_BRANDS = [
   },
   {
     "name": "Cartier",
-    "count": 4,
+    "count": 6,
     "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872722785.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7876736100.webp",
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865363854.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862249433.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862312293.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866511221.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862249433.webp"
     ],
     "href": "products.html?q=Cartier"
   },
   {
-    "name": "Celine",
-    "count": 4,
+    "name": "Casio",
+    "count": 2,
     "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875722838.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866901856.webp"
+    ],
+    "href": "products.html?q=Casio"
+  },
+  {
+    "name": "Celine",
+    "count": 6,
+    "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7871971727.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7876747642.webp",
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862561773.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865097751.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866634643.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869609068.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865097751.webp"
     ],
     "href": "products.html?q=Celine"
   },
   {
     "name": "Chanel",
-    "count": 8,
+    "count": 15,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7863574179.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7863768313.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869284284.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869224900.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875572924.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875788490.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873583525.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873711793.webp"
     ],
     "href": "products.html?q=Chanel"
   },
@@ -171,23 +213,23 @@ window.KQS_BRANDS = [
   },
   {
     "name": "Chrome Hearts",
-    "count": 18,
+    "count": 27,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873209746.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7870201637.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873201910.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873073230.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7871969679.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7874979780.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875784248.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875722994.webp"
     ],
     "href": "products.html?q=Chrome%20Hearts"
   },
   {
     "name": "Coach",
-    "count": 5,
+    "count": 9,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866204907.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869211076.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869545042.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869577388.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875782210.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875766406.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875489246.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7876674124.webp"
     ],
     "href": "products.html?q=Coach"
   },
@@ -211,12 +253,12 @@ window.KQS_BRANDS = [
   },
   {
     "name": "Corteiz",
-    "count": 5,
+    "count": 9,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7870621245.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7870597367.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865390852.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866850990.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7874928364.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7871936055.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7876736102.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873939663.webp"
     ],
     "href": "products.html?q=Corteiz"
   },
@@ -231,8 +273,9 @@ window.KQS_BRANDS = [
   },
   {
     "name": "Denim Tears",
-    "count": 2,
+    "count": 3,
     "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7876803516.webp",
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7870099427.webp",
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7863801329.webp"
     ],
@@ -250,12 +293,12 @@ window.KQS_BRANDS = [
   },
   {
     "name": "Dior",
-    "count": 23,
+    "count": 39,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7870077547.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873704468.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862463451.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866882762.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875813892.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872750325.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875709128.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872789893.webp"
     ],
     "href": "products.html?q=Dior"
   },
@@ -270,13 +313,23 @@ window.KQS_BRANDS = [
   },
   {
     "name": "Fendi",
-    "count": 3,
+    "count": 4,
     "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872799717.webp",
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866823332.webp",
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7868044226.webp",
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7864987503.webp"
     ],
     "href": "products.html?q=Fendi"
+  },
+  {
+    "name": "Gentle Monster",
+    "count": 2,
+    "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875722842.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7876678714.webp"
+    ],
+    "href": "products.html?q=Gentle%20Monster"
   },
   {
     "name": "Golden Goose",
@@ -290,23 +343,23 @@ window.KQS_BRANDS = [
   },
   {
     "name": "Goyard",
-    "count": 6,
+    "count": 8,
     "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873656803.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873872459.webp",
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865361132.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862515885.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862267173.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872440156.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862515885.webp"
     ],
     "href": "products.html?q=Goyard"
   },
   {
     "name": "Gucci",
-    "count": 29,
+    "count": 45,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873211774.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873700582.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7870690115.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862329881.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872679363.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875687514.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872574777.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875780242.webp"
     ],
     "href": "products.html?q=Gucci"
   },
@@ -321,12 +374,12 @@ window.KQS_BRANDS = [
   },
   {
     "name": "Hermes",
-    "count": 6,
+    "count": 9,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865559862.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7863817127.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869595286.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869607204.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872724431.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875788336.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873652663.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865559862.webp"
     ],
     "href": "products.html?q=Hermes"
   },
@@ -338,6 +391,15 @@ window.KQS_BRANDS = [
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7867798410.webp"
     ],
     "href": "products.html?q=Hogan"
+  },
+  {
+    "name": "Jacquemus",
+    "count": 2,
+    "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872776171.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866608955.webp"
+    ],
+    "href": "products.html?q=Jacquemus"
   },
   {
     "name": "Jordan",
@@ -380,6 +442,15 @@ window.KQS_BRANDS = [
     "href": "products.html?q=Lanvin"
   },
   {
+    "name": "Loewe",
+    "count": 2,
+    "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873690147.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869652746.webp"
+    ],
+    "href": "products.html?q=Loewe"
+  },
+  {
     "name": "Lululemon",
     "count": 3,
     "images": [
@@ -391,19 +462,20 @@ window.KQS_BRANDS = [
   },
   {
     "name": "LV",
-    "count": 31,
+    "count": 60,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7870058521.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865493284.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865497484.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865414474.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875744510.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872776167.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875730808.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875734810.webp"
     ],
     "href": "products.html?q=LV"
   },
   {
     "name": "Maison Mihara Yasuhiro",
-    "count": 3,
+    "count": 4,
     "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872730451.webp",
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7867568680.webp",
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865081783.webp",
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872398506.webp"
@@ -412,22 +484,23 @@ window.KQS_BRANDS = [
   },
   {
     "name": "MCM",
-    "count": 3,
+    "count": 7,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865493450.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869683730.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869554958.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875720906.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872805677.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7876733754.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873567199.webp"
     ],
     "href": "products.html?q=MCM"
   },
   {
     "name": "Michael Kors",
-    "count": 4,
+    "count": 7,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866622811.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869640810.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866559393.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869940000.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875758428.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872772121.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873624645.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866622811.webp"
     ],
     "href": "products.html?q=Michael%20Kors"
   },
@@ -443,12 +516,12 @@ window.KQS_BRANDS = [
   },
   {
     "name": "Moncler",
-    "count": 11,
+    "count": 16,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7870103513.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873215730.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7870688183.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873611410.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875187816.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875148608.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872124607.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872163817.webp"
     ],
     "href": "products.html?q=Moncler"
   },
@@ -511,6 +584,17 @@ window.KQS_BRANDS = [
     "href": "products.html?q=Off%20White"
   },
   {
+    "name": "Omega",
+    "count": 4,
+    "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873668203.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7877223122.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7874173411.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7877221138.webp"
+    ],
+    "href": "products.html?q=Omega"
+  },
+  {
     "name": "On",
     "count": 2,
     "images": [
@@ -521,44 +605,65 @@ window.KQS_BRANDS = [
   },
   {
     "name": "Palm Angels",
-    "count": 3,
+    "count": 5,
     "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7871930205.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7874993890.webp",
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873627274.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873617402.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862254581.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873617402.webp"
     ],
     "href": "products.html?q=Palm%20Angels"
   },
   {
-    "name": "Pinko",
-    "count": 7,
+    "name": "Pandora",
+    "count": 3,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869658690.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869672316.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866287431.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869607178.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875792648.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7876648864.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869556934.webp"
+    ],
+    "href": "products.html?q=Pandora"
+  },
+  {
+    "name": "Pinko",
+    "count": 14,
+    "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875707208.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872766483.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875806304.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875794446.webp"
     ],
     "href": "products.html?q=Pinko"
   },
   {
-    "name": "Prada",
-    "count": 14,
+    "name": "Poedagar",
+    "count": 3,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873688796.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862263229.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866608008.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7868009508.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873689899.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7876719724.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7874230659.webp"
+    ],
+    "href": "products.html?q=Poedagar"
+  },
+  {
+    "name": "Prada",
+    "count": 19,
+    "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7871930199.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7871938101.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7876648644.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7876640870.webp"
     ],
     "href": "products.html?q=Prada"
   },
   {
     "name": "Ralph Lauren",
-    "count": 24,
+    "count": 37,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7870187795.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873159078.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873155166.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873089156.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7874946352.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7871942051.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7871981761.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872071193.webp"
     ],
     "href": "products.html?q=Ralph%20Lauren"
   },
@@ -574,20 +679,23 @@ window.KQS_BRANDS = [
   },
   {
     "name": "Rolex",
-    "count": 2,
+    "count": 26,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869664764.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869645088.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875812186.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872693539.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872731361.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872732891.webp"
     ],
     "href": "products.html?q=Rolex"
   },
   {
     "name": "Saint Laurent",
-    "count": 3,
+    "count": 12,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869276422.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866218753.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869693694.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872712585.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875786374.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872790203.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7872799951.webp"
     ],
     "href": "products.html?q=Saint%20Laurent"
   },
@@ -612,19 +720,32 @@ window.KQS_BRANDS = [
   },
   {
     "name": "Stone Island",
-    "count": 4,
+    "count": 11,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7870686397.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873613418.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865369786.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7862363665.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875179862.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875197646.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875126936.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875199610.webp"
     ],
     "href": "products.html?q=Stone%20Island"
   },
   {
-    "name": "Supreme",
-    "count": 2,
+    "name": "Stussy",
+    "count": 14,
     "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7874039155.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7877260690.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7874275669.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7874145593.webp"
+    ],
+    "href": "products.html?q=Stussy"
+  },
+  {
+    "name": "Supreme",
+    "count": 4,
+    "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7876686744.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873876385.webp",
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7865525070.webp",
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866576078.webp"
     ],
@@ -638,6 +759,15 @@ window.KQS_BRANDS = [
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7863907599.webp"
     ],
     "href": "products.html?q=The%20North%20Face"
+  },
+  {
+    "name": "Tiffany",
+    "count": 2,
+    "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7875790488.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7869699620.webp"
+    ],
+    "href": "products.html?q=Tiffany"
   },
   {
     "name": "Tod's",
@@ -657,6 +787,15 @@ window.KQS_BRANDS = [
       "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866618590.webp"
     ],
     "href": "products.html?q=Trapstar"
+  },
+  {
+    "name": "True Religion",
+    "count": 2,
+    "images": [
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7874948104.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866850994.webp"
+    ],
+    "href": "products.html?q=True%20Religion"
   },
   {
     "name": "Vale",
@@ -690,12 +829,12 @@ window.KQS_BRANDS = [
   },
   {
     "name": "Vivienne Westwood",
-    "count": 6,
+    "count": 9,
     "images": [
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866624662.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866593077.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866679631.webp",
-      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866977631.webp"
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7873615029.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7876728004.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7876698662.webp",
+      "https://cdn.jsdelivr.net/gh/qjy0126/kakobuysheetlink@main/img/products/7866624662.webp"
     ],
     "href": "products.html?q=Vivienne%20Westwood"
   },
