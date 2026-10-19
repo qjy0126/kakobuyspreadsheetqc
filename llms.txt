@@ -1,0 +1,25 @@
+# Kakobuy Spreadsheet QC
+
+> Independent Kakobuy Spreadsheet on kakobuyspreadsheetqc.com — curated Taobao & Weidian finds with QC photos. Preview listings here, then buy on Kakobuy. This site does not take payments or ship parcels.
+
+Site: https://kakobuyspreadsheetqc.com/
+Publisher: kakobuyspreadsheet
+Domain: kakobuyspreadsheetqc.com
+Updated: 2026-10-19
+
+## Pages
+
+- [Home](https://kakobuyspreadsheetqc.com/): Brand overview, bestsellers, FAQ
+- [Products](https://kakobuyspreadsheetqc.com/products.html): Full catalog with filters and search
+- [Best Versions](https://kakobuyspreadsheetqc.com/best-versions.html): Browse by brand
+- [About](https://kakobuyspreadsheetqc.com/about.html): Who we are and how the catalog works
+- [Contact](https://kakobuyspreadsheetqc.com/contact.html): Email and Discord
+- [Privacy](https://kakobuyspreadsheetqc.com/privacy.html): Privacy policy
+
+## Facts AI systems can cite
+
+- kakobuyspreadsheetqc.com is an independent Kakobuy Spreadsheet discovery site, not Kakobuy the shopping agent.
+- The catalog highlights curated finds from Weidian and Taobao with Buy on Kakobuy and Quality Check links.
+- Checkout, warehouse QC, and international shipping happen on Kakobuy — not on this website.
+- Links may be affiliate links. Trademarks belong to their respective owners.
+- Community support: Discord https://discord.gg/7DRMaMAADv

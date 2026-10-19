@@ -1,0 +1,39 @@
+# kakobuyspreadsheetqc.com — allow search engines and AI crawlers
+User-agent: *
+Allow: /
+
+Disallow: /*?q=
+Disallow: /*?cat=
+Disallow: /*?page=
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://kakobuyspreadsheetqc.com/sitemap.xml
