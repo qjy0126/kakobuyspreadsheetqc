@@ -1,6 +1,20 @@
 (() => {
   const SITE = "https://kakobuyspreadsheetqc.online";
   const products = Array.isArray(window.KQS_PRODUCTS) ? window.KQS_PRODUCTS : [];
+  const AFFCODE = "9v88f";
+
+  function withAffcode(url) {
+    const raw = String(url || "").trim();
+    if (!raw) return raw;
+    try {
+      const u = new URL(raw, "https://www.kakobuy.com");
+      if (!/kakobuy\.com$/i.test(u.hostname) && !/\.kakobuy\.com$/i.test(u.hostname)) return raw;
+      u.searchParams.set("affcode", AFFCODE);
+      return u.toString();
+    } catch (_) {
+      return raw;
+    }
+  }
 
   function inject(data) {
     const el = document.createElement("script");
@@ -95,7 +109,7 @@
           "@type": "Product",
           name: p.name,
           image: p.image,
-          url: p.buy || SITE + "/products.html",
+          url: withAffcode(p.buy) || SITE + "/products",
           brand: p.tags && p.tags[0] ? { "@type": "Brand", name: p.tags[0] } : undefined,
           offers: p.price
             ? {
@@ -103,7 +117,7 @@
                 price: String(p.price),
                 priceCurrency: "USD",
                 availability: "https://schema.org/InStock",
-                url: p.buy,
+                url: withAffcode(p.buy),
               }
             : undefined,
         },

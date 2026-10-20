@@ -7,6 +7,33 @@
   const nav = document.querySelector("[data-nav]");
   const toggle = document.querySelector("[data-nav-toggle]");
 
+  /* Kakobuy invite / affiliate — https://ikako.vip/r/9v88f */
+  const KAKOBUY_AFFCODE = "9v88f";
+
+  function withAffcode(url) {
+    const raw = String(url || "").trim();
+    if (!raw) return raw;
+    try {
+      const u = new URL(raw, "https://www.kakobuy.com");
+      if (!/kakobuy\.com$/i.test(u.hostname) && !/\.kakobuy\.com$/i.test(u.hostname)) {
+        return raw;
+      }
+      u.searchParams.set("affcode", KAKOBUY_AFFCODE);
+      return u.toString();
+    } catch (_) {
+      if (/[?&]affcode=/i.test(raw)) {
+        return raw.replace(/([?&]affcode=)[^&]*/i, `$1${KAKOBUY_AFFCODE}`);
+      }
+      return raw + (raw.includes("?") ? "&" : "?") + "affcode=" + KAKOBUY_AFFCODE;
+    }
+  }
+
+  function kakobuyItemUrl(sourceUrl) {
+    return withAffcode(
+      `https://www.kakobuy.com/item/details?url=${encodeURIComponent(sourceUrl || "")}`
+    );
+  }
+
   function priceHTML(p) {
     if (p.price == null || p.price === "") return "";
     const n = Number(p.price);
@@ -53,7 +80,8 @@
 
   function cardHTML(p) {
     const tag = p.categoryLabel || (p.tags && p.tags[0]) || "Kakobuy";
-    const qc = `https://www.kakobuy.com/item/details?url=${encodeURIComponent(p.link || "")}`;
+    const buy = withAffcode(p.buy) || kakobuyItemUrl(p.link);
+    const qc = kakobuyItemUrl(p.link);
     const img = p.image || "";
     const primary = imgFallbacks(img)[0] || img;
     const detail = productPath(p);
@@ -70,7 +98,7 @@
         ${priceHTML(p)}
         <p class="tags">${tag}</p>
         <div class="actions">
-          <a class="btn btn-buy" href="${p.buy}" target="_blank" rel="noopener">Buy on Kakobuy</a>
+          <a class="btn btn-buy" href="${buy}" target="_blank" rel="noopener">Buy on Kakobuy</a>
           <a class="btn btn-qc" href="${qc}" target="_blank" rel="noopener">Quality Check</a>
         </div>
       </article>`;
@@ -100,7 +128,8 @@
       setMeta('meta[property="og:description"]', "content", desc);
       setMeta('meta[property="og:url"]', "content", canonical);
       const img = imgFallbacks(hit.image || "")[0] || hit.image || "";
-      const qc = `https://www.kakobuy.com/item/details?url=${encodeURIComponent(hit.link || "")}`;
+      const buy = withAffcode(hit.buy) || kakobuyItemUrl(hit.link);
+      const qc = kakobuyItemUrl(hit.link);
       productDetail.innerHTML = `
         <article class="product-card product-detail-card">
           <div class="thumb">
@@ -110,7 +139,7 @@
           ${priceHTML(hit)}
           <p class="tags">${hit.categoryLabel || hit.category || "Kakobuy"}</p>
           <div class="actions">
-            <a class="btn btn-buy" href="${hit.buy}" target="_blank" rel="noopener">Buy on Kakobuy</a>
+            <a class="btn btn-buy" href="${buy}" target="_blank" rel="noopener">Buy on Kakobuy</a>
             <a class="btn btn-qc" href="${qc}" target="_blank" rel="noopener">Quality Check</a>
             <a class="btn btn-glow" href="products.html">Browse more finds</a>
           </div>
@@ -127,7 +156,7 @@
         category: hit.categoryLabel || hit.category,
         offers: {
           "@type": "Offer",
-          url: hit.buy || canonical,
+          url: buy || canonical,
           priceCurrency: "USD",
           price: String(hit.price || ""),
           availability: "https://schema.org/InStock",
