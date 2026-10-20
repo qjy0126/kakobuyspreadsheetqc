@@ -1,5 +1,5 @@
 (() => {
-  const SITE = "https://kakobuyspreadsheetqc.com";
+  const SITE = "https://kakobuyspreadsheetqc.online";
   const products = Array.isArray(window.KQS_PRODUCTS) ? window.KQS_PRODUCTS : [];
 
   function inject(data) {
@@ -27,7 +27,7 @@
     name: "Kakobuy Spreadsheet QC",
     url: SITE + "/",
     description:
-      "Kakobuy Spreadsheet 2026: curated Taobao & Weidian finds with QC photos on kakobuyspreadsheetqc.com.",
+      "Kakobuy Spreadsheet 2026: curated Taobao & Weidian finds with QC photos on kakobuyspreadsheetqc.online.",
     publisher: { "@type": "Organization", name: "kakobuyspreadsheet", url: SITE + "/" },
     potentialAction: {
       "@type": "SearchAction",
@@ -46,7 +46,7 @@
           name: "What is kakobuyspreadsheet?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "A curated Kakobuy product discovery site — spreadsheet finds as a clean shoppable UI on kakobuyspreadsheetqc.com.",
+            text: "A curated Kakobuy product discovery site — spreadsheet finds as a clean shoppable UI on kakobuyspreadsheetqc.online.",
           },
         },
         {
