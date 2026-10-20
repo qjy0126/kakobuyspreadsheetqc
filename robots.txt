@@ -1,4 +1,4 @@
-# kakobuyspreadsheetqc.com — allow search engines and AI crawlers
+# kakobuyspreadsheetqc.online — allow search engines and AI crawlers
 User-agent: *
 Allow: /
 
@@ -36,4 +36,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://kakobuyspreadsheetqc.com/sitemap.xml
+Sitemap: https://kakobuyspreadsheetqc.online/sitemap.xml
