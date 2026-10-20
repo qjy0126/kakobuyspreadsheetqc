@@ -14,14 +14,47 @@
     return `<p class="price">${n.toFixed(2)}$</p>`;
   }
 
+  /* Product thumbs: jsdmirror (CN-friendly), fall back to jsdelivr / raw GitHub */
+  function imgFallbacks(src) {
+    const s = String(src || "");
+    if (!s) return [];
+    const gh = s.match(
+      /(?:cdn\.jsd(?:elivr\.net|mirror\.(?:com|cn))\/gh\/|raw\.githubusercontent\.com\/)([^/@]+)\/([^/@]+)(?:@[^/]+)?\/(.+)/i
+    );
+    if (!gh) return [s];
+    const [, user, repo, path] = gh;
+    const clean = path.replace(/^main\//, "");
+    return [
+      `https://cdn.jsdmirror.com/gh/${user}/${repo}@main/${clean}`,
+      `https://cdn.jsdmirror.cn/gh/${user}/${repo}@main/${clean}`,
+      `https://cdn.jsdelivr.net/gh/${user}/${repo}@main/${clean}`,
+      `https://raw.githubusercontent.com/${user}/${repo}/main/${clean}`,
+    ].filter((u, i, arr) => arr.indexOf(u) === i);
+  }
+
+  function onImgError(img) {
+    const chain = imgFallbacks(img.getAttribute("data-src") || img.src);
+    let i = Number(img.dataset.cdnTry || 0) + 1;
+    while (i < chain.length && chain[i] === img.src) i += 1;
+    if (i < chain.length) {
+      img.dataset.cdnTry = String(i);
+      img.src = chain[i];
+      return;
+    }
+    img.removeAttribute("onerror");
+  }
+
+  window.__kqsImgError = onImgError;
+
   function cardHTML(p) {
     const tag = p.categoryLabel || (p.tags && p.tags[0]) || "Kakobuy";
     const qc = `https://www.kakobuy.com/item/details?url=${encodeURIComponent(p.link || "")}`;
     const img = p.image || "";
+    const primary = imgFallbacks(img)[0] || img;
     return `
       <article class="product-card">
         <div class="thumb">
-          <img src="${img}" alt="${p.name}" loading="lazy" decoding="async" width="400" height="400" />
+          <img src="${primary}" data-src="${img || primary}" alt="${p.name}" loading="lazy" decoding="async" width="400" height="400" onerror="window.__kqsImgError&&window.__kqsImgError(this)" />
         </div>
         <h3>${p.name}</h3>
         ${priceHTML(p)}
@@ -37,15 +70,17 @@
   const popular = products.filter((p) => p.popular).slice(0, 12);
 
   if (featuredRail) {
-    featuredRail.innerHTML = (featured.length ? featured : products.slice(0, 8))
-      .map(cardHTML)
-      .join("");
+    const list = featured.length ? featured : products.slice(0, 8);
+    featuredRail.innerHTML = list.length
+      ? list.map(cardHTML).join("")
+      : `<p class="empty-state">Catalog loading… refresh if this stays empty.</p>`;
   }
 
   if (bestsellerGrid) {
-    bestsellerGrid.innerHTML = (popular.length ? popular : products.slice(0, 12))
-      .map(cardHTML)
-      .join("");
+    const list = popular.length ? popular : products.slice(0, 12);
+    bestsellerGrid.innerHTML = list.length
+      ? list.map(cardHTML).join("")
+      : `<p class="empty-state">Catalog loading… refresh if this stays empty.</p>`;
   }
 
   if (toggle && nav) {
@@ -65,7 +100,10 @@
       .map((b) => {
         const imgs = (b.images || []).slice(0, 4);
         const collage = imgs
-          .map((src) => `<img src="${src}" alt="" loading="lazy" decoding="async" />`)
+          .map((src) => {
+            const primary = imgFallbacks(src)[0] || src;
+            return `<img src="${primary}" data-src="${src || primary}" alt="" loading="lazy" decoding="async" onerror="window.__kqsImgError&&window.__kqsImgError(this)" />`;
+          })
           .join("");
         return `
           <a class="brand-tile" href="${b.href}" aria-label="${b.name}">
