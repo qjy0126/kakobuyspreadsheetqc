@@ -263,11 +263,16 @@ def main():
         "window.KQS_PRODUCT_PATHS = " + json.dumps(id_map, ensure_ascii=False) + ";\n",
     )
 
-    # Sitemap index + split files (Google-friendly)
+    # Sitemap index: main (pages+cats+brands) + split product files
+    from datetime import date
+
+    today = date.today().isoformat()
     static = [u for u in urls if "/c/" not in u[0] and "/b/" not in u[0] and "/p/" not in u[0]]
     cats_u = [u for u in urls if "/c/" in u[0]]
     brands_u = [u for u in urls if "/b/" in u[0]]
     prods_u = [u for u in urls if "/p/" in u[0]]
+    main_u = static + cats_u + brands_u
+    mid = (len(prods_u) + 1) // 2
 
     def write_urlset(path: Path, entries):
         lines = [
@@ -278,7 +283,7 @@ def main():
             lines += [
                 "  <url>",
                 f"    <loc>{loc}</loc>",
-                "    <lastmod>2026-10-20</lastmod>",
+                f"    <lastmod>{today}</lastmod>",
                 f"    <changefreq>{freq}</changefreq>",
                 f"    <priority>{pri}</priority>",
                 "  </url>",
@@ -286,39 +291,43 @@ def main():
         lines.append("</urlset>")
         path.write_text("\n".join(lines) + "\n")
 
-    write_urlset(ROOT / "sitemap-pages.xml", static)
-    write_urlset(ROOT / "sitemap-categories.xml", cats_u)
-    write_urlset(ROOT / "sitemap-brands.xml", brands_u)
-    write_urlset(ROOT / "sitemap-products.xml", prods_u)
+    write_urlset(ROOT / "sitemap-main.xml", main_u)
+    write_urlset(ROOT / "sitemap-products-1.xml", prods_u[:mid])
+    write_urlset(ROOT / "sitemap-products-2.xml", prods_u[mid:])
 
-    index = f"""<?xml version="1.0" encoding="UTF-8"?>
+    (ROOT / "sitemap.xml").write_text(
+        f"""<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap><loc>{SITE}/sitemap-pages.xml</loc><lastmod>2026-10-20</lastmod></sitemap>
-  <sitemap><loc>{SITE}/sitemap-categories.xml</loc><lastmod>2026-10-20</lastmod></sitemap>
-  <sitemap><loc>{SITE}/sitemap-brands.xml</loc><lastmod>2026-10-20</lastmod></sitemap>
-  <sitemap><loc>{SITE}/sitemap-products.xml</loc><lastmod>2026-10-20</lastmod></sitemap>
+  <sitemap><loc>{SITE}/sitemap-main.xml</loc><lastmod>{today}</lastmod></sitemap>
+  <sitemap><loc>{SITE}/sitemap-products-1.xml</loc><lastmod>{today}</lastmod></sitemap>
+  <sitemap><loc>{SITE}/sitemap-products-2.xml</loc><lastmod>{today}</lastmod></sitemap>
 </sitemapindex>
 """
-    (ROOT / "sitemap.xml").write_text(index)
+    )
 
-    # headers for new sitemaps
-    headers = ROOT / "_headers"
-    extra = """
-/sitemap-pages.xml
+    (ROOT / "_headers").write_text(
+        """/sitemap.xml
+  Content-Type: application/xml; charset=utf-8
+  X-Content-Type-Options: nosniff
+  Cache-Control: public, max-age=300
+
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=300
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+
+/sitemap-main.xml
   Content-Type: application/xml; charset=utf-8
 
-/sitemap-categories.xml
+/sitemap-products-1.xml
   Content-Type: application/xml; charset=utf-8
 
-/sitemap-brands.xml
-  Content-Type: application/xml; charset=utf-8
-
-/sitemap-products.xml
+/sitemap-products-2.xml
   Content-Type: application/xml; charset=utf-8
 """
-    h = headers.read_text() if headers.exists() else ""
-    if "sitemap-products.xml" not in h:
-        headers.write_text(h.rstrip() + "\n" + extra)
+    )
 
     print(
         f"generated categories={len(cats_u)} brands={len(brands_u)} products={len(prods_u)} total_urls={len(urls)}"

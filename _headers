@@ -10,14 +10,11 @@
 /llms.txt
   Content-Type: text/plain; charset=utf-8
 
-/sitemap-pages.xml
+/sitemap-main.xml
   Content-Type: application/xml; charset=utf-8
 
-/sitemap-categories.xml
+/sitemap-products-1.xml
   Content-Type: application/xml; charset=utf-8
 
-/sitemap-brands.xml
-  Content-Type: application/xml; charset=utf-8
-
-/sitemap-products.xml
+/sitemap-products-2.xml
   Content-Type: application/xml; charset=utf-8
