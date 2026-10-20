@@ -455,6 +455,7 @@ body.search-open { overflow: hidden; }
 
 .product-card .thumb {
   position: relative;
+  display: block;
   aspect-ratio: 1 / 1;
   border-radius: 14px;
   overflow: hidden;
@@ -475,6 +476,25 @@ body.search-open { overflow: hidden; }
   font-weight: 700;
   line-height: 1.25;
   min-height: 2.4em;
+}
+
+.product-card h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-card h3 a:hover {
+  color: var(--neon);
+}
+
+.product-detail {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 1rem clamp(1rem, 3vw, 2rem) 3rem;
+}
+
+.product-detail-card {
+  padding: 1rem;
 }
 
 .product-card .price {

@@ -1,0 +1,2 @@
+# Pretty product URLs → shared product template (SPA-style for crawlers + users)
+/p/*  /product.html  200

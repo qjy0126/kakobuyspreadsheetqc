@@ -37,3 +37,4 @@ User-agent: Bingbot
 Allow: /
 
 Sitemap: https://kakobuyspreadsheetqc.online/sitemap.xml
+# Also listed: sitemap-pages / categories / brands / products

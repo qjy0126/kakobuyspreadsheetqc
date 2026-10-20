@@ -46,17 +46,27 @@
 
   window.__kqsImgError = onImgError;
 
+  function productPath(p) {
+    const map = window.KQS_PRODUCT_PATHS || {};
+    return map[String(p.id || "")] || "";
+  }
+
   function cardHTML(p) {
     const tag = p.categoryLabel || (p.tags && p.tags[0]) || "Kakobuy";
     const qc = `https://www.kakobuy.com/item/details?url=${encodeURIComponent(p.link || "")}`;
     const img = p.image || "";
     const primary = imgFallbacks(img)[0] || img;
+    const detail = productPath(p);
+    const title = detail
+      ? `<h3><a href="${detail}">${p.name}</a></h3>`
+      : `<h3>${p.name}</h3>`;
+    const thumb = detail
+      ? `<a class="thumb" href="${detail}"><img src="${primary}" data-src="${img || primary}" alt="${p.name}" loading="lazy" decoding="async" width="400" height="400" onerror="window.__kqsImgError&&window.__kqsImgError(this)" /></a>`
+      : `<div class="thumb"><img src="${primary}" data-src="${img || primary}" alt="${p.name}" loading="lazy" decoding="async" width="400" height="400" onerror="window.__kqsImgError&&window.__kqsImgError(this)" /></div>`;
     return `
       <article class="product-card">
-        <div class="thumb">
-          <img src="${primary}" data-src="${img || primary}" alt="${p.name}" loading="lazy" decoding="async" width="400" height="400" onerror="window.__kqsImgError&&window.__kqsImgError(this)" />
-        </div>
-        <h3>${p.name}</h3>
+        ${thumb}
+        ${title}
         ${priceHTML(p)}
         <p class="tags">${tag}</p>
         <div class="actions">
@@ -64,6 +74,67 @@
           <a class="btn btn-qc" href="${qc}" target="_blank" rel="noopener">Quality Check</a>
         </div>
       </article>`;
+  }
+
+  /* Product detail pages: /p/{slug-id}/ rewritten to product.html */
+  const productDetail = document.querySelector("#product-detail");
+  if (productDetail && document.body && document.body.dataset.page === "product") {
+    const idMatch = location.pathname.match(/(\d+)\/?$/);
+    const pid = idMatch ? idMatch[1] : "";
+    const hit = products.find((p) => String(p.id) === pid);
+    if (!hit) {
+      productDetail.innerHTML = `<p class="empty-state">Product not found. <a href="products.html">Browse products</a></p>`;
+    } else {
+      const path = productPath(hit) || location.pathname;
+      const canonical = `https://kakobuyspreadsheetqc.online${path.endsWith("/") ? path : path + "/"}`;
+      const title = `${hit.name} | Kakobuy Spreadsheet QC`;
+      const desc = `QC photos and Buy on Kakobuy for ${hit.name}. Curated on kakobuyspreadsheetqc.online.`;
+      document.title = title;
+      const setMeta = (sel, attr, val) => {
+        const el = document.querySelector(sel);
+        if (el) el.setAttribute(attr, val);
+      };
+      setMeta('meta[name="description"]', "content", desc);
+      setMeta('link[rel="canonical"]', "href", canonical);
+      setMeta('meta[property="og:title"]', "content", title);
+      setMeta('meta[property="og:description"]', "content", desc);
+      setMeta('meta[property="og:url"]', "content", canonical);
+      const img = imgFallbacks(hit.image || "")[0] || hit.image || "";
+      const qc = `https://www.kakobuy.com/item/details?url=${encodeURIComponent(hit.link || "")}`;
+      productDetail.innerHTML = `
+        <article class="product-card product-detail-card">
+          <div class="thumb">
+            <img src="${img}" data-src="${hit.image || img}" alt="${hit.name}" width="560" height="560" onerror="window.__kqsImgError&&window.__kqsImgError(this)" />
+          </div>
+          <h1 class="page-title" style="margin-top:1rem">${hit.name}</h1>
+          ${priceHTML(hit)}
+          <p class="tags">${hit.categoryLabel || hit.category || "Kakobuy"}</p>
+          <div class="actions">
+            <a class="btn btn-buy" href="${hit.buy}" target="_blank" rel="noopener">Buy on Kakobuy</a>
+            <a class="btn btn-qc" href="${qc}" target="_blank" rel="noopener">Quality Check</a>
+            <a class="btn btn-glow" href="products.html">Browse more finds</a>
+          </div>
+        </article>`;
+      const ld = document.createElement("script");
+      ld.type = "application/ld+json";
+      ld.textContent = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Product",
+        name: hit.name,
+        image: hit.image,
+        url: canonical,
+        sku: String(hit.id || ""),
+        category: hit.categoryLabel || hit.category,
+        offers: {
+          "@type": "Offer",
+          url: hit.buy || canonical,
+          priceCurrency: "USD",
+          price: String(hit.price || ""),
+          availability: "https://schema.org/InStock",
+        },
+      });
+      document.head.appendChild(ld);
+    }
   }
 
   const featured = products.filter((p) => p.featured).slice(0, 8);
@@ -444,8 +515,10 @@
   }
 
   const params = new URLSearchParams(location.search);
-  let activeCat = params.get("cat") || "All";
-  let query = (params.get("q") || "").trim();
+  const bodyCat = (document.body && document.body.dataset.cat) || "";
+  const bodyQ = (document.body && document.body.dataset.q) || "";
+  let activeCat = params.get("cat") || bodyCat || "All";
+  let query = (params.get("q") || bodyQ || "").trim();
   let visibleCount = PAGE_SIZE;
 
   const chipList = [
