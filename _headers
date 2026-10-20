@@ -18,3 +18,12 @@
 
 /sitemap-products-2.xml
   Content-Type: application/xml; charset=utf-8
+
+/sitemap-pages.xml
+  Content-Type: application/xml; charset=utf-8
+
+/sitemap-categories.xml
+  Content-Type: application/xml; charset=utf-8
+
+/sitemap-brands.xml
+  Content-Type: application/xml; charset=utf-8
