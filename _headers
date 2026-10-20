@@ -1,29 +1,34 @@
 /sitemap.xml
   Content-Type: application/xml; charset=utf-8
   X-Content-Type-Options: nosniff
-  Cache-Control: public, max-age=300
+  Cache-Control: public, max-age=60
 
 /robots.txt
   Content-Type: text/plain; charset=utf-8
-  Cache-Control: public, max-age=300
 
 /llms.txt
   Content-Type: text/plain; charset=utf-8
 
-/sitemap-main.xml
+/sitemap-brands.xml
   Content-Type: application/xml; charset=utf-8
-
-/sitemap-products-1.xml
-  Content-Type: application/xml; charset=utf-8
-
-/sitemap-products-2.xml
-  Content-Type: application/xml; charset=utf-8
-
-/sitemap-pages.xml
-  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=60
 
 /sitemap-categories.xml
   Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=60
 
-/sitemap-brands.xml
+/sitemap-pages.xml
   Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=60
+
+/sitemap-main.xml
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=60
+
+/sitemap-products-1.xml
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=60
+
+/sitemap-products-2.xml
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=60
