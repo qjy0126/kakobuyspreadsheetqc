@@ -114,6 +114,7 @@ def chrome(title: str, description: str, canonical: str, depth: int, active: str
   <script src="{p}js/product-paths.js"></script>
   <script src="{p}js/main.js"></script>
   <script src="{p}js/seo.js"></script>
+  <script type="module" src="{p}js/firebase-analytics.js"></script>
 </body>
 </html>
 """
